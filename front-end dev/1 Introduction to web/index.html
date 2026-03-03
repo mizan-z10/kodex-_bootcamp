@@ -1,0 +1,186 @@
+<!-- ======================================= -->
+<!-- HTML COMPLETE BASIC TUTORIAL (ONE FILE) -->
+<!-- ======================================= -->
+
+<!DOCTYPE html>
+<!-- NOTE: Browser ko batata hai ki ye HTML5 document hai -->
+
+<html lang="en">
+<!-- NOTE: Pura HTML code isi tag ke andar hota hai -->
+
+<head>
+    <!-- NOTE: Head me website ki information hoti hai (user ko directly nahi dikhti) -->
+
+    <meta charset="UTF-8">
+    <!-- NOTE: Characters (English, Hindi, symbols) sahi dikhane ke liye -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- NOTE: Mobile, tablet, laptop sab par sahi view ke liye -->
+
+    <title>HTML Complete Basics</title>
+    <!-- NOTE: Browser tab ka title -->
+</head>
+
+<body>
+    <!-- NOTE: Body me jo likhenge wahi screen par dikhega -->
+
+    <!-- ============================= -->
+    <!-- 1. HEADINGS -->
+    <!-- ============================= -->
+
+    <h1>Main Heading (H1)</h1>
+    <!-- NOTE: Page ka main title, sirf ek baar use karna -->
+
+    <h2>Section Heading (H2)</h2>
+    <!-- NOTE: Major section ke liye -->
+
+    <h3>Sub Section (H3)</h3>
+    <h4>H4 Heading</h4>
+    <h5>H5 Heading</h5>
+    <h6>H6 Heading</h6>
+    <!-- NOTE: Heading ka size chhota hota jata hai -->
+
+    <!-- ============================= -->
+    <!-- 2. PARAGRAPH -->
+    <!-- ============================= -->
+
+    <p>
+        This is a paragraph. HTML is used to create the structure of web pages.
+    </p>
+    <!-- NOTE: Normal text likhne ke liye <p> use hota hai -->
+
+    <!-- ============================= -->
+    <!-- 3. LINE BREAK & HORIZONTAL LINE -->
+    <!-- ============================= -->
+
+    <p>
+        Line one <br>
+        Line two
+    </p>
+    <!-- NOTE: <br> next line me le jata hai -->
+
+    <hr>
+    <!-- NOTE: Horizontal line banata hai -->
+
+    <!-- ============================= -->
+    <!-- 4. TEXT FORMATTING -->
+    <!-- ============================= -->
+
+    <p>
+        <b>Bold Text</b><br>
+        <strong>Strong Text (important)</strong><br>
+        <i>Italic Text</i><br>
+        <em>Emphasized Text</em><br>
+        <u>Underlined Text</u><br>
+        <mark>Highlighted Text</mark>
+    </p>
+    <!-- NOTE: Text ko highlight / emphasize karne ke liye -->
+
+    <!-- ============================= -->
+    <!-- 5. LINK (ANCHOR TAG) -->
+    <!-- ============================= -->
+
+    <a href="https://www.google.com" target="_blank">
+        Visit Google
+    </a>
+    <!-- NOTE: href = link address -->
+    <!-- NOTE: target="_blank" = new tab me open -->
+
+    <br><br>
+
+    <!-- ============================= -->
+    <!-- 6. IMAGE -->
+    <!-- ============================= -->
+
+    <img src="https://via.placeholder.com/200" alt="Sample Image">
+    <!-- NOTE: src = image path -->
+    <!-- NOTE: alt = image na dikhe to text -->
+
+    <br><br>
+
+    <!-- ============================= -->
+    <!-- 7. LIST -->
+    <!-- ============================= -->
+
+    <!-- Unordered List -->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <!-- NOTE: Bullet list -->
+
+    <!-- Ordered List -->
+    <ol>
+        <li>Wake up</li>
+        <li>Study</li>
+        <li>Practice</li>
+    </ol>
+    <!-- NOTE: Numbered list -->
+
+    <!-- ============================= -->
+    <!-- 8. TABLE -->
+    <!-- ============================= -->
+
+    <table border="1">
+        <!-- NOTE: Table start -->
+
+        <tr>
+            <!-- NOTE: Table row -->
+            <th>Name</th>
+            <th>Class</th>
+            <th>Marks</th>
+        </tr>
+
+        <tr>
+            <td>Mizan</td>
+            <td>BCA</td>
+            <td>85</td>
+        </tr>
+
+        <tr>
+            <td>Ali</td>
+            <td>10</td>
+            <td>78</td>
+        </tr>
+    </table>
+
+    <!-- ============================= -->
+    <!-- 9. FORM -->
+    <!-- ============================= -->
+
+    <form>
+        <!-- NOTE: User se input lene ke liye -->
+
+        <label>Name:</label><br>
+        <input type="text" placeholder="Enter your name">
+        <br><br>
+
+        <label>Password:</label><br>
+        <input type="password">
+        <br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox"> HTML
+        <input type="checkbox"> CSS
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <!-- NOTE: Form submit button -->
+    </form>
+
+    <!-- ============================= -->
+    <!-- 10. COMMENT -->
+    <!-- ============================= -->
+
+    <!-- Ye ek HTML comment hai -->
+    <!-- NOTE: Browser me dikhai nahi deta -->
+
+</body>
+
+</html>
