@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c86cfab;
+    font-family: Arial, sans-serif;
+}
+form{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.fline{
+    display: flex;
+        gap: 20px;
+
+}
+.ephone{
+    display: flex;
+        gap: 20px;
+
+}
+.pass{
+    display: flex;
+        gap: 20px;
+
+}
+.rad{
+    display: flex;
+    gap: 20px;
+}
+input{
+    width: 100%;
+    padding: 8px;
+    padding-right: 20px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button{
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.9s ease;
+}
+button:hover{
+    background-color: #0d0e0d;
+    transform: scale(1);
+
+    
+}
+
+/* .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: default;
+  transition: all 0.3s ease;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: #0f1629;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 150%;
+  height: 150%;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid #c73b3b;
+  color: #c73b3b;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: #ffffff;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #c73b3b;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  width: 100%;
+} */

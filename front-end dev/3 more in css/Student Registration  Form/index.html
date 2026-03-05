@@ -1,0 +1,65 @@
+<!-- Create a complete student registration webpage. The page should look like an online form where a student can 
+enter their personal and academic details. The form must be easy to read, properly spaced, and visually  clean. 
+o Page heading with the title of the form 
+o Input fields for student name, email, and password 
+o Gender selection using radio buttons 
+o Course selection using a dropdown menu 
+o Address field using a textarea 
+o A submit button at the bottom of the form -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <form id="registrationForm">
+            <h1>Registration</h1>
+            <div class="form-group">
+                <div class="fline">
+                    <div><label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name" />
+                    </div>
+                    <div><label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required placeholder="Enter your username" />
+                    </div>
+                </div>
+                <div class="ephone">
+                    <div><label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email "/>
+                    </div>
+                    <div><label for="tel">Phone Number:</label>
+                        <input type="tel" id="tel" name="tel" required placeholder="Enter your phone number" />
+                    </div>
+                </div>
+                <div class="pass">
+                    <div><label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required placeholder="Enter your password" />
+                    </div>
+                    <div><label for="comfirmpassword">Comfirm Password:</label>
+                        <input type="password" id="comfirmpassword" name="comfirmpassword" required placeholder="Confirm your password" />
+                    </div>
+                </div>
+                <div class="radio">
+                    <div><label for="gender">Gender:</label></div>
+                    <div class="rad">
+                    <input type="radio" id="male" name="gender" value="male" />
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other" />
+                    <label for="other">Other</label>
+                    </div>
+                </div>
+                <button class="btn">Registration</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

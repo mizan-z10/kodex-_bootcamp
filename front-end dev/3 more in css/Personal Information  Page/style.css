@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background:#f3f3f3;
+
+}
+.container{
+    width:80%;
+    margin:40px auto;
+    background:white;
+}
+header{
+    text-align:center;
+    background:#cfe0ec;
+    padding:30px;
+}
+.profile-image{
+    width:80px;
+    border-radius:50%;
+    margin-bottom:10px;
+}
+.name{
+    font-size:24px;
+    margin-bottom:5px;
+}
+.role{
+    color:gray;
+}
+section{
+    padding:20px;
+    border:10px solid #eee;
+    border-radius: 10px;
+}
+.skills-list span{
+    display:inline-block;
+    background:#e6eef5;
+    padding:5px 10px;
+    margin:5px;
+    border-radius:5px;
+    font-size:14px;
+}
+.job{
+    margin-top:10px;
+}
+
+.job ul{
+    margin-left:20px;
+}
+footer{
+    text-align:center;
+    background:#cfe0ec;
+    padding:20px;
+}

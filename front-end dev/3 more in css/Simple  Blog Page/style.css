@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 ;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #fff;
+    border-bottom: #000 solid 1px;
+}
+.logo{
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+.nav-links{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 10px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: #000 solid 1px ;
+}
+.sideimg img{
+    width: 500px;
+    height: 480px;
+    object-fit: cover;
+    
+}
+.content{
+    padding-left: 50px;
+    padding-top: 80px;
+    
+}
+.content h1{
+    font-size: 120px;
+    font-weight: 700;
+    color: #000;
+   line-height: 100px;
+   letter-spacing: -6.6px;
+    
+}
+.content p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    margin: 30px 0;
+}
+.content button{
+    padding: 20px 40px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-size-adjust: 100%;
+}
+.last{
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    gap: 20px;                 /* links ke beech space */
+    padding: 20px;
+}
+
+.last a{
+    text-decoration: none;
+    color: black;
+}
