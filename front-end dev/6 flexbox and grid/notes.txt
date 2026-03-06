@@ -1,0 +1,158 @@
+
+
+# CSS Display Notes
+
+## 1. Display Property
+
+CSS में **display property** यह तय करती है कि HTML element webpage पर कैसे दिखाई देगा और कितनी जगह लेगा।
+
+Example:
+
+```
+display: block;
+display: inline;
+display: inline-block;
+display: flex;
+```
+
+---
+
+# 2. Block Element
+
+Block element पूरी line की width लेता है और हमेशा **नई line से start होता है**।
+
+### Properties
+
+* Full width लेता है
+* New line से start होता है
+* Height और width apply होते हैं
+* Margin और padding apply होते हैं
+* Transform properties काम करती हैं
+
+### Examples
+
+```
+<div>
+<p>
+<h1> - <h6>
+<section>
+```
+
+---
+
+# 3. Inline Element
+
+Inline element सिर्फ उतनी ही space लेता है जितनी उसके content को चाहिए।
+
+### Properties
+
+* New line नहीं बनाता
+* Height और width apply नहीं होते
+* Margin top और bottom काम नहीं करते
+* Transform properties generally काम नहीं करती
+
+### Examples
+
+```
+<span>
+<a>
+<b>
+<i>
+```
+
+---
+
+# 4. Inline-Block Element
+
+Inline-block element में **block और inline दोनों के features होते हैं।**
+
+### Properties
+
+* Side में display होता है (inline जैसा)
+* Height और width apply होते हैं (block जैसा)
+* Margin और padding apply होते हैं
+
+Example
+
+```
+display: inline-block;
+```
+
+---
+
+# 5. Flexbox
+
+Flexbox एक **layout system** है जो elements को align और arrange करने के लिए use होता है।
+
+Example
+
+```
+display: flex;
+```
+
+### Main Properties
+
+**flex-direction**
+
+```
+row
+column
+```
+
+**justify-content**
+Horizontal alignment के लिए
+
+Examples
+
+```
+center
+space-between
+space-around
+```
+
+**align-items**
+Vertical alignment के लिए
+
+Examples
+
+```
+center
+flex-start
+flex-end
+```
+
+**flex-wrap**
+
+```
+wrap
+nowrap
+```
+
+---
+
+# 6. Overflow
+
+Overflow property यह control करती है कि container के बाहर जाने वाले content के साथ क्या करना है।
+
+Examples
+
+```
+overflow: hidden;
+overflow: scroll;
+overflow: auto;
+```
+
+---
+
+# Short Summary
+
+| Display Type | Feature                     |
+| ------------ | --------------------------- |
+| Block        | Full width और new line      |
+| Inline       | Content के size जितनी width |
+| Inline-block | Inline + block दोनों        |
+| Flex         | Layout और alignment के लिए  |
+
+---
+
+
