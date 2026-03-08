@@ -42,4 +42,12 @@ function updateTime(){
 
 updateTime();
 
-setInterval(updateTime,1000);
+// setInterval(updateTime,1000);
+
+let tick = new Audio("./asset/tick.mp3");
+
+setInterval(()=>{
+    updateTime();
+    tick.currentTime = 0;
+    tick.play();
+},1000);
