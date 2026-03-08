@@ -1,0 +1,465 @@
+
+# CSS Animations, Transforms, Transitions & Pseudo Selectors
+
+Complete Frontend Notes
+
+---
+
+# 1. CSS Animation
+
+## What is CSS Animation
+
+CSS animation allows elements to **change styles smoothly over time without JavaScript**.
+
+### Uses
+
+* Loaders
+* Hover effects
+* UI motion
+* Micro interactions
+* Attention effects
+
+---
+
+# Animation Properties
+
+```css
+.box{
+animation-name: move;
+animation-duration: 2s;
+animation-timing-function: ease;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+```
+
+| Property                  | Meaning              |
+| ------------------------- | -------------------- |
+| animation-name            | keyframe name        |
+| animation-duration        | total animation time |
+| animation-timing-function | speed curve          |
+| animation-delay           | start delay          |
+| animation-iteration-count | repeat count         |
+| animation-direction       | forward / reverse    |
+
+---
+
+# Animation Shorthand
+
+```css
+.box{
+animation: move 2s ease infinite alternate;
+}
+```
+
+Order
+
+```
+animation: name duration timing-function iteration-count direction
+```
+
+---
+
+# 2. @keyframes
+
+Defines animation steps.
+
+### Basic Example
+
+```css
+@keyframes move{
+
+from{
+transform: translateX(0);
+}
+
+to{
+transform: translateX(200px);
+}
+
+}
+```
+
+---
+
+### Percentage Animation
+
+```css
+@keyframes colorChange{
+
+0%{
+background:red;
+}
+
+50%{
+background:yellow;
+}
+
+100%{
+background:blue;
+}
+
+}
+```
+
+Timeline
+
+```
+0% → start
+50% → middle
+100% → end
+```
+
+---
+
+# 3. CSS Transform
+
+Transform changes **position, rotation, scale, or skew of elements**.
+
+---
+
+## Translate
+
+Moves element.
+
+```css
+.box{
+transform: translateX(100px);
+}
+```
+
+Move vertically
+
+```css
+transform: translateY(100px);
+```
+
+Move both directions
+
+```css
+transform: translate(100px,50px);
+```
+
+---
+
+## Scale
+
+Changes size.
+
+```css
+.box{
+transform: scale(1.5);
+}
+```
+
+Meaning
+
+```
+1 = normal size
+>1 = bigger
+<1 = smaller
+```
+
+Example
+
+```css
+transform: scale(2);
+```
+
+---
+
+## Rotate
+
+Rotates element.
+
+```css
+.box{
+transform: rotate(45deg);
+}
+```
+
+---
+
+## Skew
+
+Tilts element.
+
+```css
+.box{
+transform: skew(20deg);
+}
+```
+
+---
+
+## Multiple Transform
+
+```css
+.box{
+transform: translateX(100px) rotate(45deg) scale(1.2);
+}
+```
+
+---
+
+# 4. CSS Transition
+
+Transition creates **smooth change between states**.
+
+---
+
+### Example
+
+```css
+.box{
+background:red;
+transition:0.5s;
+}
+
+.box:hover{
+background:blue;
+}
+```
+
+Meaning
+
+```
+When hover happens
+color changes smoothly
+```
+
+---
+
+### Transition Properties
+
+```css
+.box{
+transition-property: background;
+transition-duration: 0.5s;
+transition-timing-function: ease;
+transition-delay: 0s;
+}
+```
+
+---
+
+### Shorthand
+
+```css
+transition: background 0.5s ease;
+```
+
+---
+
+# 5. Pseudo Classes
+
+Pseudo classes target **element states**.
+
+Syntax
+
+```
+selector:pseudo-class
+```
+
+---
+
+## :hover
+
+Triggered when mouse is over element.
+
+```css
+button:hover{
+background:green;
+}
+```
+
+---
+
+## :active
+
+Triggered while clicking.
+
+```css
+button:active{
+transform:scale(0.95);
+}
+```
+
+---
+
+## :focus
+
+Triggered when input is selected.
+
+```css
+input:focus{
+border:2px solid blue;
+}
+```
+
+Common uses
+
+* forms
+* login pages
+
+---
+
+## :visited
+
+Targets visited links.
+
+```css
+a:visited{
+color:purple;
+}
+```
+
+---
+
+# 6. Pseudo Elements
+
+Pseudo elements target **specific parts of elements**.
+
+Syntax
+
+```
+selector::pseudo-element
+```
+
+---
+
+## ::before
+
+Adds content before element.
+
+```css
+.box::before{
+content:"🔥";
+}
+```
+
+---
+
+## ::after
+
+Adds content after element.
+
+```css
+.box::after{
+content:"🚀";
+}
+```
+
+---
+
+## ::first-letter
+
+Targets first letter.
+
+```css
+p::first-letter{
+font-size:40px;
+}
+```
+
+---
+
+## ::first-line
+
+Targets first line.
+
+```css
+p::first-line{
+color:red;
+}
+```
+
+---
+
+# 7. Combined Example
+
+### HTML
+
+```html
+<button class="btn">Hover Me</button>
+```
+
+---
+
+### CSS
+
+```css
+.btn{
+padding:15px 30px;
+background:orange;
+border:none;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+background:red;
+}
+
+.btn::after{
+content:" →";
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.1);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+.btn{
+animation:pulse 2s infinite;
+}
+```
+
+---
+
+# 8. Transition vs Animation
+
+| Feature    | Transition  | Animation |
+| ---------- | ----------- | --------- |
+| Trigger    | User action | Automatic |
+| Keyframes  | No          | Yes       |
+| Complexity | Simple      | Complex   |
+| Control    | Limited     | Full      |
+
+---
+
+# Quick Revision Table
+
+| Topic      | Purpose               |
+| ---------- | --------------------- |
+| animation  | element motion        |
+| keyframes  | animation steps       |
+| transform  | move / rotate / scale |
+| transition | smooth state change   |
+| :hover     | mouse over            |
+| :active    | click state           |
+| :focus     | input selected        |
+| ::before   | content before        |
+| ::after    | content after         |
+
+---
+
+---
+
+अगर चाहो तो मैं तुम्हें अगला भी बना सकता हूँ:
+
+**"Frontend Internship Roadmap (0 → Internship in 60 Days)"**
+
+जिससे तुम्हारा **KodexBootcamp का ₹30,000 waste न हो।**
