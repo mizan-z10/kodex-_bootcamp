@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 100px;
+}
+.bod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+/* HTML: <div class="lollipop"></div> */
+.lollipop {
+  --r: 150px; /* control the size */
+  --c1: #fd99d7;
+  --c2: #4e4cb0;
+
+  height: calc(2* var(--r));
+  aspect-ratio: 1;
+  clip-path: circle();
+  display: flex;
+  margin: auto;
+}
+.lollipop:before,
+.lollipop:after {
+  content: "";
+  flex: 1;
+  --g1:radial-gradient(50% 50%,var(--c1) 99%,#0000) no-repeat;
+  --g2:radial-gradient(50% 50%,var(--c2) 99%,#0000) no-repeat;
+  background: var(--g1) calc(sin(60deg)* var(--r)) calc(var(--r) / -2), var(--g2) calc(var(--r) / 2) calc(sin(-60deg)* var(--r)), var(--g1) 0 calc(-1* var(--r)), var(--g2) calc(var(--r) / -2) calc(sin(-60deg)* var(--r)), var(--g1) calc(sin(-60deg)* var(--r)) calc(var(--r) / -2), var(--g2) calc(-1* var(--r)) 0, var(--g1) calc(sin(-60deg)* var(--r)) calc(var(--r) / 2);
+  background-size: 200%;
+}
+.lollipop:after {
+   rotate: 180deg;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+
+.bulb {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 20px auto;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto;
+}

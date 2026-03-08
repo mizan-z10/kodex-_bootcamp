@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Level DOM + Math Practice Tasks
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Intermediate Level DOM + Math Practice Tasks</h1>
+        <div class="task">
+            <h2>## 1. Dice Game
+
+                Create two dice images dynamically using `document.createElement()`. Use
+                `Math.random()` to generate numbers (1--6). Display both dice results
+                and show the winner based on the higher number. Render everything
+                dynamically using `append()` or `appendChild()`.
+            </h2>
+            <div id="task1">
+                <div id="player" class="dice"></div>
+                <div id="computer" class="dice"></div>
+                <div id="result"></div>
+            </div>
+            <button id="flipButton" class="cool-btn">flip dice</button>
+        </div>
+
+        <h2>## 2. Random Color Card Generator
+
+            Create a card on button click. Generate a random RGB background color
+            using `Math.floor()` and `Math.random()`. Set a random width and height.
+            Assign a unique `data-id` using `setAttribute()`.</h2>
+        <div id="cardContainer"></div>
+        <button id="cardBtn" class="cool-btn">Create Card</button>
+
+        <h2>## 3. Lottery System
+
+            Take user input (1--50). Generate a random number using `Math.ceil()`.
+            If the number matches user input, display "You Won" otherwise "Try
+            Again". Update result dynamically in the DOM.</h2>
+        <div id="lottery">
+            <input type="number" id="lotteryInput" min="1" max="50" placeholder="Enter a number (1-50)">
+            <button id="lotteryBtn" class="cool-btn">Play Lottery</button>
+            <div id="lotteryResult"></div>
+        </div>
+
+        <h2>## 4. Dynamic Image Gallery</h2>
+        <p>Click to append a random image from an array.</p>
+        <div id="galleryContainer" class="gallery"></div>
+        <button id="galleryBtn" class="cool-btn">Add Random Image</button>
+
+        <h2>## 5. Progress Bar Simulator</h2>
+        <div id="progressContainer">
+            <div class="progress"><div id="progressFill" class="progress-fill" style="width:0%">0%</div></div>
+        </div>
+        <button id="progressBtn" class="cool-btn">Advance Progress</button>
+
+        <h2>## 6. Random Box Remover</h2>
+        <div id="boxesContainer" class="boxes"></div>
+        <button id="createBoxesBtn" class="cool-btn">Create Boxes</button>
+
+        <h2>## 7. Mini Gambling UI</h2>
+        <div id="gambleResult" class="gamble"></div>
+        <button id="gambleBtn" class="cool-btn">Spin</button>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

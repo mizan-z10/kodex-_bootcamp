@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice in DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>DOM Practice — KODEX</h1>
+        <p class="sub">Interactive tasks to learn DOM manipulation</p>
+    </header>
+
+    <main class="container">
+        <section class="card" id="task1">
+            <h2>1 — Toggle Text</h2>
+            <p id="textElement">Hello</p>
+            <button id="changeBtn" class="btn">Change Text</button>
+        </section>
+
+        <section class="card" id="task2">
+            <h2>2 — Box Controls</h2>
+            <div class="box" id="mainBox">Box</div>
+            <div class="row">
+                <button id="rotateLeftBtn" class="btn">Rotate ←</button>
+                <button id="rotateRightBtn" class="btn">Rotate →</button>
+                <button id="changeBoxColorBtn" class="btn">Change Color</button>
+                <button id="toggleBoxBtn" class="btn">Show / Hide</button>
+            </div>
+        </section>
+
+        <section class="card" id="task5">
+            <h2>3 — Counter</h2>
+            <div class="counter">
+                <button id="decreaseBtn" class="btn">-</button>
+                <h3 id="numberDisplay">0</h3>
+                <button id="increaseBtn" class="btn">+</button>
+            </div>
+            <button id="changeModeBtn" class="btn">Change Mode</button>
+        </section>
+
+        <section class="card" id="task7">
+            <h2>4 — Live Input</h2>
+            <input id="inputBox" class="input" placeholder="Type here...">
+            <p id="displayText" class="muted">(output will appear here)</p>
+        </section>
+
+        <section class="card" id="task8">
+            <h2>5 — Hover Box</h2>
+            <div id="hoverBox" class="hover-box">Hover me</div>
+        </section>
+
+        <section class="card" id="task9">
+            <h2>6 — One-time Button</h2>
+            <button id="onceBtn" class="btn">Click me once</button>
+            <p id="onceText" class="muted"></p>
+        </section>
+
+        <section class="card" id="task10">
+            <h2>7 — Traffic Light</h2>
+            <div class="traffic">
+                <div id="redLight" class="light"></div>
+                <div id="yellowLight" class="light"></div>
+                <div id="greenLight" class="light"></div>
+            </div>
+            <div class="row">
+                <button id="stopBtn" class="btn">Stop</button>
+                <button id="readyBtn" class="btn">Ready</button>
+                <button id="goBtn" class="btn">Go</button>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
