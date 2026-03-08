@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-image: url(./asset/bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 75%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    position: relative;
+   
+}
+.clock-container{
+    height: 40%;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+
+}
+
+.clock-container img{
+    height: 100%;
+    filter: invert(1);
+    object-fit: cover;
+    object-position: center;
+
+}
+.hand{
+    height: 2%;
+    width: 50%;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform-origin: center left;
+    transform: translateY(-50%) rotate(-90deg);
+    transition: all 1s linear;
+    border-radius: 10px;
+
+}
+#sechand{
+    width: 40%;
+    background-color: #030318cc;
+}
+#minhand{
+    width: 30%;
+    background-color: #3b5b61;
+    z-index: 3; 
+}
+#hourhand{
+    width: 20%;
+    background-color:#52865C;
+    z-index: 4; 
+} 
+h1{
+    font-size: 3.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 0px 11px white;
+}
+p{
+    font-size: 1.5rem;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 0px 5px white;
+}
+h2{
+    font-size: 2rem;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 0px 5px white;
+}
