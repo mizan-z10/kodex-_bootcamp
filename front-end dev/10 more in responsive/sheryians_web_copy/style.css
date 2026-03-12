@@ -290,7 +290,7 @@ section.grid-video{
     margin-bottom: 2vmax;
 }
 
-section.grid-video .container{
+/* section.grid-video .container{
     display: grid;
     grid-template-columns: repeat(2,1fr) 2fr;
     grid-template-rows: repeat(2,1fr);
@@ -302,31 +302,52 @@ section.grid-video .container{
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 7px 0px, rgba(0, 0, 0, 0.1) 0px 4px 4px 0px, rgba(0, 0, 0, 0.05) 0px 4px 4px 0px, rgb(48, 44, 42) 0px 1px 68.7px 0px inset;
 
+} */
+ /* section.grid-video .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 2vmax;
+    border: 1px solid rgba(255, 255, 255, 0.699);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 7px 0px, rgba(0, 0, 0, 0.1) 0px 4px 4px 0px, rgba(0, 0, 0, 0.05) 0px 4px 4px 0px, rgb(48, 44, 42) 0px 1px 68.7px 0px inset;
+
 }
 
 section.grid-video .container .youtube{
-    /* background-color: aqua; */
     grid-column: 1/2;
     border: 1px solid rgba(255, 255, 255, 0.692);
     border-radius: 12px;
+        display: flex;
+    flex-direction: column;
+        justify-content: space-between;
 }
 section.grid-video .container .youtube .logo-youtube img{
     height: 4vw;
     width: 4vw;
-    /* object-fit: cover; */
 }
 section.grid-video .container .youtube .logo-youtube {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
     padding-left: 6px;
-    align-items: center;
+    justify-content: center;
     gap: 5px;
-    
-
 }
+.img600k{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.grid-video .sometxt{
+    font-weight: 400;
+    font-size: 1.1vmax;
+    padding: 6px;
+}
+
 section.grid-video .container .youtube .logo-youtube h1{
         color: #E8602E;
-    /* font-family: machina; */
     font-weight: 400;
 }
 section.grid-video .container .youtube h2{
@@ -341,8 +362,6 @@ section.grid-video .container .million{
 }
 
 section.grid-video .container .video{
-    background-color: aqua;
-    /* width: 100%; */
     grid-column: 3/4;
     grid-row: 1/3;
 }
@@ -357,4 +376,98 @@ video{
 section.grid-video .container .unlock{
     background-color: aqua;
     grid-column: 1/3;
+} */
+
+
+section.grid-video .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+    width: 100%;
+    padding: 2vmax;
+
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 12px;
+
+    box-shadow:
+    rgba(0,0,0,0.05) 0px 4px 7px,
+    rgba(0,0,0,0.1) 0px 4px 4px,
+    rgba(0,0,0,0.05) 0px 4px 4px,
+    rgb(48,44,42) 0px 1px 68px inset;
+}
+
+/* card */
+
+.youtube{
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* logo area */
+
+.logo-youtube{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+}
+
+.img600k{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-youtube img{
+    width: 40px;
+}
+
+/* text */
+
+.sometxt{
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* video */
+
+.video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.7);
+}
+
+/* simple boxes */
+
+.million,
+.unlock{
+    background-color: aqua;
+}
+
+
+section.grid-video .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+/* tablet */
+@media (max-width: 900px){
+    section.grid-video .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* mobile */
+@media (max-width: 500px){
+    section.grid-video .container{
+        grid-template-columns: 1fr;
+    }
 }

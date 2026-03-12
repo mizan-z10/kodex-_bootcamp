@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+body{
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* card container */
+
+.card{
+    height:80%;
+    width:20rem;
+    background:white;
+    border-radius:12px;
+    position:relative;
+    overflow:hidden;
+}
+
+/* scrollable status list */
+
+.status-list{
+    height:100%;
+    overflow-y:auto;
+}
+
+/* status item */
+
+.statuss{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:12px 18px;
+    border-bottom:1px solid rgba(0,0,0,0.15);
+    cursor:pointer;
+}
+
+.statuss img{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.status-info h2{
+    font-size:16px;
+    font-weight:600;
+}
+
+.status-info p{
+    font-size:13px;
+    color:gray;
+}
+
+/* preview overlay inside card */
+
+.full-preview{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:none;
+    z-index:10;
+    padding:15px;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* progress bar */
+
+.progress-bar{
+    width:100%;
+    height:5px;
+    background:rgba(255,255,255,0.5);
+    border-radius:10px;
+}
+
+.progress{
+    width:0%;
+    height:5px;
+    background:white;
+    border-radius:10px;
+}
+
+/* close button */
+
+#close{
+    position:absolute;
+    top:20px;
+    right:20px;
+    font-size:24px;
+    color:white;
+    cursor:pointer;
+}
+
+/* scrollbar style */
+
+.status-list::-webkit-scrollbar{
+    width:6px;
+}
+
+.status-list::-webkit-scrollbar-thumb{
+    background:#bbb;
+    border-radius:10px;
+}
