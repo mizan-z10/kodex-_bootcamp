@@ -1,0 +1,187 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body{
+height:100%;
+width:100%;
+background:#111;
+}
+
+/* MAIN LAYOUT */
+
+main{
+width:100%;
+min-height:100vh;
+padding-bottom:40px;
+}
+
+/* ADD PRODUCT SECTION */
+
+.add-data{
+width:100%;
+background:#f8cb45;
+padding:40px 50px;
+}
+
+.add-data form{
+width:100%;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+/* INPUTS */
+
+.add-data input,
+.add-data select{
+padding:12px 18px;
+border-radius:6px;
+border:none;
+font-size:16px;
+min-width:180px;
+outline:none;
+}
+
+.add-data input:focus,
+.add-data select:focus{
+box-shadow:0 0 0 2px black;
+}
+
+/* BUTTON */
+
+.add-data button{
+padding:12px 22px;
+border-radius:6px;
+border:none;
+background:black;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.add-data button:hover{
+background:#333;
+}
+
+button:active{
+transform:scale(0.95);
+}
+
+/* PRODUCT GRID */
+
+.all-data{
+padding:30px;
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+gap:20px;
+}
+
+/* PRODUCT CARD */
+
+.item{
+background:white;
+padding:20px;
+border-radius:10px;
+display:flex;
+flex-direction:column;
+gap:8px;
+box-shadow:0 8px 18px rgba(0,0,0,0.25);
+transition:0.2s;
+}
+
+.item:hover{
+transform:translateY(-3px);
+}
+
+/* PRODUCT NAME */
+
+.item h3{
+font-size:20px;
+margin-bottom:5px;
+border-bottom:2px solid #eee;
+padding-bottom:6px;
+}
+
+/* DETAILS */
+
+.item h4{
+font-size:15px;
+font-weight:500;
+color:#333;
+}
+
+.item span{
+font-weight:600;
+}
+
+/* BUTTON AREA */
+
+.item div{
+margin-top:10px;
+display:flex;
+gap:10px;
+}
+
+/* EDIT BUTTON */
+
+.item div button:first-child{
+background:royalblue;
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:5px;
+cursor:pointer;
+font-weight:600;
+}
+
+/* DELETE BUTTON */
+
+.item div button:last-child{
+background:red;
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:5px;
+cursor:pointer;
+font-weight:600;
+}
+
+/* HOVER EFFECTS */
+
+.item div button:first-child:hover{
+background:#2f55d4;
+}
+
+.item div button:last-child:hover{
+background:#cc0000;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:600px){
+
+.add-data{
+padding:25px 20px;
+}
+
+.add-data form{
+flex-direction:column;
+align-items:center;
+}
+
+.add-data input,
+.add-data select{
+width:100%;
+}
+
+.add-data button{
+width:100%;
+}
+
+}

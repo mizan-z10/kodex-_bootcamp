@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main>
+
+<div class="add-data">
+<form id="productForm">
+
+<input type="text" id="name" placeholder="Product Name" required>
+
+<select id="category">
+<option value="">Select Category</option>
+<option>Dairy</option>
+<option>Groceries</option>
+<option>Snacks</option>
+<option>Beverages</option>
+<option>Personal Care</option>
+</select>
+
+<input type="number" id="price" placeholder="Selling Price">
+
+<input type="number" id="quantity" placeholder="Quantity">
+
+<input type="date" id="expiry">
+
+<input type="text" id="supplier" placeholder="Supplier Name">
+
+<button type="submit">Save Product</button>
+
+</form>
+</div>
+
+<div class="all-data"></div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
