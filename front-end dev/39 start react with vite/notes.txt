@@ -1,0 +1,147 @@
+1. What is Vite
+
+Vite = Modern frontend build tool
+Use: Fast web apps (React, Vue, Svelte)
+
+👉 Created by Evan You
+
+Why Vite is Popular
+❌ Old Approach (Webpack)
+Bundle everything → then run
+
+👉 Slow startup
+
+✅ Vite Approach
+Browser requests module
+        ↓
+Vite serves that module
+        ↓
+Instant start
+Advantages
+
+⚡ Fast dev server
+
+🔥 Instant HMR (Hot Reload)
+
+📦 Lightweight
+
+🚀 Optimized build
+
+2. Create React App using Vite
+Step 1 — Create Project
+npm create vite@latest
+Step 2 — Enter Folder
+cd my-react-app
+Step 3 — Install
+npm install
+Step 4 — Run Project
+npm run dev
+
+👉 Output:
+
+http://localhost:5173
+3. Folder Structure
+my-react-app
+│
+├── node_modules
+├── public
+├── src
+│   ├── assets
+│   ├── App.jsx
+│   ├── main.jsx
+│
+├── index.html
+├── package.json
+├── vite.config.js
+Important Files
+index.html
+
+Entry HTML
+
+React inject होता है यहाँ
+
+main.jsx (VERY IMPORTANT)
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <App />
+);
+
+👉 Entry point of React
+
+App.jsx
+function App() {
+  return <h1>Hello React</h1>;
+}
+
+export default App;
+
+👉 Root component
+
+vite.config.js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  plugins: [react()],
+});
+
+👉 Vite configuration
+
+4. Important Commands
+npm create vite@latest   # create project
+npm install              # install dependencies
+npm run dev              # start server
+npm run build            # production build
+npm run preview          # preview build
+5. React Components
+
+👉 Component = Reusable UI block
+
+Examples:
+
+Navbar
+
+Card
+
+Footer
+
+Example
+function Navbar() {
+  return <h1>My Website</h1>;
+}
+
+export default Navbar;
+
+Usage:
+
+<Navbar />
+6. Types of Components
+✅ Functional (Modern)
+function App() {
+  return <h1>Hello</h1>;
+}
+❌ Class (Old)
+class App extends React.Component {
+  render() {
+    return <h1>Hello</h1>;
+  }
+}
+
+👉 Use functional + hooks
+
+7. Component Thinking
+
+👉 Website = Combination of components
+
+App
+│
+├── Navbar
+├── Hero
+├── ProductList
+│      ├── ProductCard
+│      ├── ProductCard
+│      └── ProductCard
+└── Footer
