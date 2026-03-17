@@ -11,3 +11,8 @@ dummy-portfolio
 https://dummy-portfolio-murex.vercel.app/
 
 
+add to cart card using react 
+https://cardwithreact.vercel.app/
+
+login and sign up page using react
+https://signup-page-taupe.vercel.app/
