@@ -1,6 +1,7 @@
+import { nanoid } from "nanoid";
 import React from "react";
 
-const Usercard = ({ user }) => {
+const Usercard = ({ user, handleremove , setUseredit , setToggle}) => {
   return (
     <div className="h-fit bg-black border flex flex-col gap-4 rounded-xl p-4 ">
       <div className="h-[80%]  rounded-full overflow-hidden">
@@ -18,10 +19,25 @@ const Usercard = ({ user }) => {
         <p className="text-xl text-gray-700">{user.emp_id}</p>
       </div>
       <div className="flex gap-4 w-full justify-between">
-        <button className="w-[50%] border py-3 rounded-xl border-yellow-500 text-yellow-500 cursor-pointer">
+        <button 
+        onClick={() => {
+          setUseredit(user);
+          // console.log(user); 
+          setToggle(true);  
+
+        }}
+        className="w-[50%] border py-3 rounded-xl border-yellow-500 text-yellow-500 cursor-pointer">
           Update
         </button>
-        <button className="w-[50%] border py-3 rounded-xl border-red-500 text-red-500 cursor-pointer">
+        <button
+          onClick={() => {
+            // console.log(user.id);
+            handleremove(user.id);
+            
+
+          }}
+          className="w-[50%] border py-3 rounded-xl border-red-500 text-red-500 cursor-pointer"
+        >
           Remove
         </button>
       </div>

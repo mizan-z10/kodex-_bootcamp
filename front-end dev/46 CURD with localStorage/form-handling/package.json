@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "form-handling",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,10 +11,9 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.2",
-    "nanoid": "^5.1.7",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-hook-form": "^7.71.2",
+    "react-hook-form": "^7.72.0",
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {

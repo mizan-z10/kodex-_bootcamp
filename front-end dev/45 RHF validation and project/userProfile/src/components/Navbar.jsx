@@ -13,7 +13,7 @@ const Navbar = ({ setToggle, toggle }) => {
       </div>
       <div>
         <button
-          onClick={() => setToggle((prev) => !prev)}
+          onClick={() => {setToggle((prev) => !prev)}}
           className="text-xl font-medium px-5 py-2 rounded-2xl cursor-pointer bg-blue-500 hover:bg-blue-600"
         >
           {toggle ? "Close" : "Add User"}
