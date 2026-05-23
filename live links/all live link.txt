@@ -20,3 +20,6 @@ https://signup-page-taupe.vercel.app/
 
 instagram clone 
 https://instagram-clone-gray-two.vercel.app/
+
+school website 
+https://mahadevprasadschool.netlify.app
